@@ -158,6 +158,10 @@ const KeyNameMapEntry kKeyNameMap[] = {
 	{ "WWWSearch",		kKeyWWWSearch },
 	{ "WWWStop",		kKeyWWWStop },
 	{ "Zenkaku",		kKeyZenkaku },
+#if 1 // for HHK
+	{ "Hangul",		kKeyHangul },
+	{ "Hanja",		kKeyHanja },
+#endif
 	{ "Space",			0x0020 },
 	{ "Exclaim",		0x0021 },
 	{ "DoubleQuote",	0x0022 },

@@ -116,6 +116,14 @@ static const KeyID		kKeyZenkaku		= 0xEF2A;	/* Zenkaku/Hankaku */
 static const KeyID		kKeyHanjaKanzi	= 0xEF2A;	/* Hanja, Kanzi */
 static const KeyID		kKeyDelete		= 0xEFFF;	/* Delete, rubout */
 
+#if 1 // for HHK
+static const KeyID    kKeyHanja   = 0xEF34;
+static const KeyID    kKeyHangul  = 0xEF31;
+#else
+static const KeyID    kKeyHanja   = 0xEFEC;
+static const KeyID    kKeyHangul  = 0xEF20;
+#endif
+
 // cursor control
 static const KeyID		kKeyHome		= 0xEF50;
 static const KeyID		kKeyLeft		= 0xEF51;	/* Move left, left arrow */
