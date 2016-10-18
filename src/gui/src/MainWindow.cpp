@@ -45,6 +45,7 @@
 #include <QMessageBox>
 #include <QFileDialog>
 #include <QDesktopServices>
+#include <QDesktopWidget>
 
 #if defined(Q_OS_MAC)
 #include <ApplicationServices/ApplicationServices.h>
@@ -1269,8 +1270,8 @@ void MainWindow::downloadBonjour()
 void MainWindow::installBonjour()
 {
 #if defined(Q_OS_WIN)
-	QString tempLocation = QDesktopServices::storageLocation(
-								QDesktopServices::TempLocation);
+	QString tempLocation = QStandardPaths::standardLocations(
+								QStandardPaths::DataLocation).takeLast();
 	QString filename = tempLocation;
 	filename.append("\\").append(bonjourTargetFilename);
 	QFile file(filename);
