@@ -117,11 +117,11 @@ static const KeyID		kKeyHanjaKanzi	= 0xEF2A;	/* Hanja, Kanzi */
 static const KeyID		kKeyDelete		= 0xEFFF;	/* Delete, rubout */
 
 #if 1 // for HHK
-static const KeyID    kKeyHanja   = 0xEF34;
-static const KeyID    kKeyHangul  = 0xEF31;
-#else
-static const KeyID    kKeyHanja   = 0xEFEC;
 static const KeyID    kKeyHangul  = 0xEF20;
+static const KeyID    kKeyHanja   = 0xEFEC;
+#else
+static const KeyID    kKeyHangul  = 0xEF31;
+static const KeyID    kKeyHanja   = 0xEF34;
 #endif
 
 // cursor control
